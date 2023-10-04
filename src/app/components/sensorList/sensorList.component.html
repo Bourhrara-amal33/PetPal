@@ -1,0 +1,27 @@
+<div>
+    <h2>Sensor Data List</h2>
+  
+    <!-- Filter by device -->
+
+  
+    <!-- Sensor data table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Device</th>
+          <th>Delay</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of sensorData">
+          <td>{{ data.date }}</td>
+          <td>{{ data.time }}</td>
+          <td>{{ data.device }}</td>
+          <td>{{ data.delay }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
