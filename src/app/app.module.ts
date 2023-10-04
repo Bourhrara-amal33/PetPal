@@ -9,10 +9,12 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { SensorListComponent } from './components/sensorList/sensorList.component';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+import { WeightSensorComponent } from './components/weight-sensor/weight-sensor.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SensorListComponent
+    SensorListComponent,
+    WeightSensorComponent
   ],
   imports: [
     BrowserModule,
