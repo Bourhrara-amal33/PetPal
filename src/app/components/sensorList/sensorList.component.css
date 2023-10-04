@@ -1,0 +1,45 @@
+/* Apply some basic styles to the table */
+.sensor-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Style the table header */
+  .sensor-table thead {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Style table header cells */
+  .sensor-table th {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style table data rows */
+  .sensor-table tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style table data cells */
+  .sensor-table td {
+    padding: 10px;
+    vertical-align: middle;
+  }
+  
+  /* Highlight alternate rows for better readability */
+  .sensor-table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  
+  /* Hover effect for table rows */
+  .sensor-table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
