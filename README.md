@@ -26,3 +26,19 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 "# PetPal" 
+
+
+
+# Configuration of the Raspberry
+
+Username : petpal
+password : petpal
+
+
+## SSH is enabled
+
+Connection via password
+
+## Keyboard
+set to fr keyboard (azerty)
+
