@@ -10,11 +10,15 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { SensorListComponent } from './components/sensorList/sensorList.component';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { WeightSensorComponent } from './components/weight-sensor/weight-sensor.component';
+import { HomeComponent } from './home/home.component';
+import { ServoMotorComponent } from './components/servo-motor/servo-motor.component';
 @NgModule({
   declarations: [
     AppComponent,
     SensorListComponent,
-    WeightSensorComponent
+    WeightSensorComponent,
+    HomeComponent,
+    ServoMotorComponent
   ],
   imports: [
     BrowserModule,
