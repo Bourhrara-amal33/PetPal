@@ -10,6 +10,7 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { SensorListComponent } from './components/sensorList/sensorList.component';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { WeightSensorComponent } from './components/weight-sensor/weight-sensor.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { WeightSensorComponent } from './components/weight-sensor/weight-sensor.
     AppRoutingModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
-    provideDatabase(() => getDatabase())
+    provideDatabase(() => getDatabase()),
+    BrowserAnimationsModule
   ],
   providers: [{ provide: FIREBASE_OPTIONS, useValue: environment.firebase }],
   bootstrap: [AppComponent]

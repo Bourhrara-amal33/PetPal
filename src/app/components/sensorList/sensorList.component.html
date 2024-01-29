@@ -1,15 +1,15 @@
-<div>
+<div class="container mt-4">
 
-  <h2>Sensor Data List</h2>
+  <h2 class="mb-4">Sensor Data List</h2>
   
   <!-- Sensor data table -->
-  <table class="sensor-table">
-    <thead>
+  <table class="table table-bordered table-striped">
+    <thead class="thead-dark">
       <tr>
         <th>Date</th>
         <th>Time</th>
         <th>Device</th>
-        <th>Delay</th>
+        <th>Distance</th>
       </tr>
     </thead>
     <tbody>
@@ -17,7 +17,7 @@
         <td>{{ data.date }}</td>
         <td>{{ data.time }}</td>
         <td>{{ data.device }}</td>
-        <td>{{ data.delay }}</td>
+        <td>{{ data.distance }}</td>
       </tr>
     </tbody>
   </table>
