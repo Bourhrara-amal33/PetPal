@@ -1,8 +1,8 @@
-export interface SensorData {
+export interface WeightSensor {
     key?: string;
     date?: string;
-    distance?: number;
     weight?: number;
     time?: string;
     device?: string;
-}
+  }
+  

@@ -1,0 +1,24 @@
+/* src/app/components/servo-motor/servo-motor.component.css */
+
+.text-center {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 20px; /* Add some top margin */
+    color: #4CAF50; /* Green color */
+  }
+  
+  .btn-primary {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    font-size: 24px; /* Larger font size */
+    padding: 20px 40px; /* Increase padding */
+    margin: 10px; /* Add some margin between buttons */
+    transition: background-color 0.3s; /* Add transition for smooth hover effect */
+  }
+  
+  .btn-primary:hover {
+    background-color: blue; /* Darker green on hover */
+  }
+  

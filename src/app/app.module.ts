@@ -10,12 +10,18 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { SensorListComponent } from './components/sensorList/sensorList.component';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { WeightSensorComponent } from './components/weight-sensor/weight-sensor.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
+import { ServoMotorComponent } from './components/servo-motor/servo-motor.component';
+import { CameraDataComponent } from './components/camera-data/camera-data.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     SensorListComponent,
-    WeightSensorComponent
+    WeightSensorComponent,
+    HomeComponent,
+    ServoMotorComponent,
+    CameraDataComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
-    BrowserAnimationsModule
+    provideFirebaseApp(() => initializeApp({"projectId":"petpal-petfeeder","appId":"1:52379806500:web:f8ed53a199b66a579f21b1","databaseURL":"https://petpal-petfeeder-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"petpal-petfeeder.appspot.com","apiKey":"AIzaSyCWxiH9ZmnWOjX3_cr_cGmMNkaTUsUnlBY","authDomain":"petpal-petfeeder.firebaseapp.com","messagingSenderId":"52379806500"}))
   ],
   providers: [{ provide: FIREBASE_OPTIONS, useValue: environment.firebase }],
   bootstrap: [AppComponent]

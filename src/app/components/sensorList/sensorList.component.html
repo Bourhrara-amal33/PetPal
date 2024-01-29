@@ -1,24 +1,44 @@
-<div class="container mt-4">
-
-  <h2 class="mb-4">Sensor Data List</h2>
+<div class="app-container">
+  <!-- Header -->
   
-  <!-- Sensor data table -->
-  <table class="table table-bordered table-striped">
-    <thead class="thead-dark">
-      <tr>
-        <th>Date</th>
-        <th>Time</th>
-        <th>Device</th>
-        <th>Distance</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let data of sensorDataList">
-        <td>{{ data.date }}</td>
-        <td>{{ data.time }}</td>
-        <td>{{ data.device }}</td>
-        <td>{{ data.distance }}</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h2>Sensor Data List</h2>
+  
+    <!-- Sensor data table -->
+    <table class="original-sensor-table">
+      <!-- Table headers -->
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Device</th>
+          <th>Distance</th>
+        </tr>
+      </thead>
+      <!-- Table body -->
+      <tbody>
+        <tr *ngFor="let data of sensorDataList">
+          <td>{{ data.date }}</td>
+          <td>{{ data.time }}</td>
+          <td>{{ data.device }}</td>
+          <td>{{ data.distance }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  
 </div>
+
+
+   
+
+
+    
+
+
+    
+    
