@@ -1,0 +1,26 @@
+<!-- weight-sensor-list.component.html -->
+<div class="weight-sensor-list-container">
+    <h2>Weight Sensor Data List</h2>
+    <!-- Weight sensor data table -->
+    <table class="original-sensor-table">
+      <!-- Table headers -->
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Device</th>
+          <th>Weight</th>
+        </tr>
+      </thead>
+      <!-- Table body -->
+      <tbody>
+        <tr *ngFor="let data of weightSensorDataList">
+          <td>{{ data.date }}</td>
+          <td>{{ data.time }}</td>
+          <td>{{ data.device }}</td>
+          <td>{{ data.weight }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

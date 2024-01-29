@@ -1,0 +1,37 @@
+<div class="camera-data-container">
+  <h2>Camera Data</h2>
+
+  <!-- Display camera data in a table -->
+  <table *ngIf="cameraDataList.length > 0">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Device</th>
+        <th *ngIf="hasImageUrl()">Image URL</th>
+        <th *ngIf="hasVideoUrl()">Video URL</th>
+        <th *ngIf="hasVideoUrl()">Video </th>
+        <th *ngIf="hasLiveStreamUrl()">Live Stream URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of cameraDataList">
+        <td>{{ data.date }}</td>
+        <td>{{ data.time }}</td>
+        <td>{{ data.device }}</td>
+        <td *ngIf="data.imageUrl">{{ data.imageUrl }}</td>
+        <td *ngIf="data.videoUrl"><a [href]="data.videoUrl" target="_blank">{{ data.videoUrl }}</a></td>
+        <video width="320" height="240" controls>
+          <source [src]="data.videoUrl" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <td *ngIf="data.liveStreamUrl"><a [href]="data.liveStreamUrl" target="_blank">{{ data.liveStreamUrl }}</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Show a message if no camera data is available -->
+  <div *ngIf="cameraDataList.length === 0">
+    No camera data available.
+  </div>
+</div>

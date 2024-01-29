@@ -1,0 +1,59 @@
+
+  h2 {
+    color: #4CAF50; /* Green color */
+    margin-top: 20px; /* Add some top margin */
+  }
+  
+  /* Ajoutez des styles si nécessaire */
+.camera-data-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Ajoutez ces styles à votre fichier CSS associé à votre composant camera-data.component.css */
+
+/* Tableau principal */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* En-tête du tableau */
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Cellules de l'en-tête */
+th {
+  padding: 12px;
+  text-align: left;
+}
+
+/* Cellules du corps du tableau */
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Lignes impaires avec fond de couleur différente */
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Liens dans les cellules */
+td a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Liens visités dans les cellules */
+td a:visited {
+  color: #0062cc;
+}
+
+/* Survolez les liens dans les cellules */
+td a:hover {
+  text-decoration: underline;
+}
